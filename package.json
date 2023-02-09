@@ -1,5 +1,5 @@
 {
-  "name": "app-calculator",
+  "name": "app-project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,6 +15,8 @@
     "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.10",
+    "@heroicons/react": "^2.0.15",
     "@next/font": "13.1.6",
     "@types/node": "18.11.19",
     "@types/react": "18.0.27",
@@ -22,12 +24,17 @@
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
+    "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-scroll": "^1.8.9",
     "swr": "^2.0.3",
+    "tw-elements": "^1.0.0-alpha13",
     "typescript": "4.9.5"
   },
   "devDependencies": {
+    "@types/react-scroll": "^1.8.6",
     "autoprefixer": "^10.4.13",
     "eslint-config-prettier": "^8.6.0",
     "husky": "^8.0.0",

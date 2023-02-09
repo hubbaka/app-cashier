@@ -1,3 +1,4 @@
+import SideBar, { Navbar } from '@/components/Navbar';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import 'styles/global.css';
@@ -14,7 +15,10 @@ export default function RootLayout({
       */}
       <head />
 
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
