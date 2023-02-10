@@ -15,10 +15,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body>
-        <Navbar />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

@@ -11,20 +11,16 @@ export const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <header className="w-full mx-auto bg-white top-0 z-50 px-20">
+    <header className="w-full mx-auto bg-white top-0 z-50 px-10">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between">
             <Link to="home">
-              <div className="md:py-5 md:block">
-                <h2 className="text-2xl font-bold">Wipet Cashier</h2>
+              <div className="py-2 md:block">
+                <h2 className="text-2xl font-bold">Wipet</h2>
               </div>
             </Link>
-            <div className="md:hidden mt-2">
-              <button onClick={() => setNavbar(!navbar)}>
-                {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
-              </button>
-            </div>
+            <div className="md:hidden mt-2"></div>
           </div>
         </div>
         <div>

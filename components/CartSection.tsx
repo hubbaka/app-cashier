@@ -20,7 +20,7 @@ const products = [
 const CartSection = () => {
   return (
     <div className="absolute bottom-0 top-12 right-0">
-      <div className="flex flex-col bg-white h-full">
+      <div className="hidden md:flex flex-col bg-white h-full">
         <div className="flex-1 overflow-y-auto py-6 px-4 sm:px-6">
           <div>
             <div className="flow-root">
@@ -71,18 +71,40 @@ const CartSection = () => {
 
         <div className="border-t border-gray-200 py-6 px-4 sm:px-6">
           <div className="flex justify-between text-base font-medium text-gray-900">
+            <p>Discount</p>
+            <p>Rp 500.000,-</p>
+          </div>
+          <div className="flex justify-between text-base font-medium text-gray-900">
             <p>Subtotal</p>
             <p>Rp 2.000.000,-</p>
           </div>
-          <p className="mt-0.5 text-sm text-gray-500">
-            Shipping and taxes calculated at checkout.
-          </p>
+          <div className="flex justify-between">
+            <p className="mt-0.5 text-sm text-gray-500">tax(11%)</p>
+            <p className="mt-0.5 text-sm text-gray-500">Rp 220.000,-</p>
+          </div>
+          <div className="flex justify-between my-5">
+            <p className="text-xl">Total</p>
+            <p className="text-xl">Rp 1.720.000,-</p>
+          </div>
+
+          <div className="inline-flex rounded-lg">
+            <p className="border-primary bg-primary hover:bg-primary hover:border-primary inline-flex items-center justify-center rounded-l-lg border py-[10px] px-[12px] text-center text-base font-semibold transition-all hover:text-gray-500 sm:py-3 sm:px-6">
+              Debit
+            </p>
+            <p className="border-light hover:bg-primary hover:border-primary inline-flex items-center justify-center border-y py-[10px] px-[12px] text-center text-sm font-semibold  transition-all hover:text-gray-500 sm:py-3 sm:px-6 sm:text-base">
+              Cash
+            </p>
+            <p className="border-light hover:bg-primary hover:border-primary inline-flex items-center justify-center rounded-r-lg border py-[10px] px-[12px] text-center text-sm font-semibold  transition-all hover:text-gray-500 sm:py-3 sm:px-6 sm:text-base">
+              Qris
+            </p>
+          </div>
+
           <div className="mt-6">
             <a
               href="#"
               className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
             >
-              Checkout
+              Pay now
             </a>
           </div>
         </div>
